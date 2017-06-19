@@ -1,0 +1,10 @@
+microsoft OS 基本のコマンド
+
+1.パソコンマネジャーを起動する
+(Win+R)+cmd+COMPMGNT.MSC
+
+2.レジスター管理を開ける
+(Win+R)+regedit
+
+3.ポートのステータスを表示する
+(Win+R)+netstat
