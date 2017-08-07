@@ -1,0 +1,28 @@
+Some basic researches about windows system
+
+The windows system is also having the kernel, which is called windows NT. And as we know, the windows kernel is just like the linux 
+kernel. Which is about to communicate with the hardware and to create some thing like processes or threads or something. However, the
+windows kernel as we know recently is that if there is no someone working for macrosoft there will never be any chances for us to see
+what is the real thing in windows.
+
+Service and process?
+
+service is a background process. It is initialized when windows system is initialized.
+process is always having some user interfaces, and it is created in user session.
+
+How to see the NT kernel version?
+
+Using VER in cmd or using winver in run.
+
+Is it having any difference between big and small charactors in windows? 
+
+No, there is not.
+But we need to according to some recommended naming conventions when writing win32 applications.
+
+What is win32 application?
+
+It is a kind of windows application software. It can be developped both in c/c++ and in vb6.0, vb.net and so on.
+
+What is windows GDI?
+
+windows graphic device interface.
