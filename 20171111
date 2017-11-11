@@ -1,0 +1,552 @@
+11对站平台 框架研究
+
+首先贴一个有意思的东西：
+11game\V2\W3
+这个下面有一个文件叫“system_filterWord.xml”
+这里面有很多敏感词汇喔
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<content ver="44">
+
+<KeyWord Type="0">法轮功</KeyWord>
+
+<KeyWord Type="0">起义</KeyWord>
+
+<KeyWord Type="0">圣战</KeyWord>
+
+<KeyWord Type="0">独立</KeyWord>
+
+<KeyWord Type="0">政变</KeyWord>
+
+<KeyWord Type="0">游行</KeyWord>
+
+<KeyWord Type="0">示威</KeyWord>
+
+<KeyWord Type="0">共产党</KeyWord>
+
+<KeyWord Type="0">全图</KeyWord>
+
+<KeyWord Type="0">外挂</KeyWord>
+
+<KeyWord Type="0">fuzhu</KeyWord>
+
+<KeyWord Type="0">全tu</KeyWord>
+
+<KeyWord Type="0">英雄三国</KeyWord>
+
+<KeyWord Type="0">狸猫游戏</KeyWord>
+
+<KeyWord Type="0">无尽英雄</KeyWord>
+
+<KeyWord Type="0">中青宝</KeyWord>
+
+<KeyWord Type="0">300英雄</KeyWord>
+
+<KeyWord Type="0">SCG</KeyWord>
+
+<KeyWord Type="0">疼迅</KeyWord>
+
+<KeyWord Type="0">习进平</KeyWord>
+
+<KeyWord Type="0">席近平</KeyWord>
+
+<KeyWord Type="0">习近评</KeyWord>
+
+<KeyWord Type="0">习近瓶</KeyWord>
+
+<KeyWord Type="0">习进评</KeyWord>
+
+<KeyWord Type="0">约炮</KeyWord>
+
+<KeyWord Type="0">sb</KeyWord>
+
+<KeyWord Type="0">腾讯对战</KeyWord>
+
+<KeyWord Type="0">腾讯电竞</KeyWord>
+
+<KeyWord Type="0">yy对战</KeyWord>
+
+<KeyWord Type="0">网易</KeyWord>
+
+<KeyWord Type="0">网易对战</KeyWord>
+
+<KeyWord Type="0">网易电竞</KeyWord>
+
+<KeyWord Type="0">JJ</KeyWord>
+
+<KeyWord Type="0">JJ对战</KeyWord>
+
+<KeyWord Type="0">JJ电竞</KeyWord>
+
+<KeyWord Type="0">www</KeyWord>
+
+<KeyWord Type="0">.com</KeyWord>
+
+<KeyWord Type="0">.com.cn</KeyWord>
+
+<KeyWord Type="0">.net</KeyWord>
+
+<KeyWord Type="0">.cn</KeyWord>
+
+<KeyWord Type="0">http</KeyWord>
+
+<KeyWord Type="0">兼职</KeyWord>
+
+<KeyWord Type="0">淘宝</KeyWord>
+
+<KeyWord Type="0">网赚</KeyWord>
+
+<KeyWord Type="0">党中央</KeyWord>
+
+<KeyWord Type="0">出售</KeyWord>
+
+<KeyWord Type="0">报复社会</KeyWord>
+
+<KeyWord Type="0">煞笔</KeyWord>
+
+<KeyWord Type="0">舔</KeyWord>
+
+<KeyWord Type="0">风暴英雄</KeyWord>
+
+<KeyWord Type="0">qq</KeyWord>
+
+<KeyWord Type="0">网招</KeyWord>
+
+<KeyWord Type="0">临时工</KeyWord>
+
+<KeyWord Type="0">小时工</KeyWord>
+
+<KeyWord Type="0">/天</KeyWord>
+
+<KeyWord Type="0">招妓</KeyWord>
+
+<KeyWord Type="0">性服务</KeyWord>
+
+<KeyWord Type="0">工作人员</KeyWord>
+
+<KeyWord Type="0">五一八二</KeyWord>
+
+<KeyWord Type="0">网上工作</KeyWord>
+
+<KeyWord Type="0">shop</KeyWord>
+
+<KeyWord Type="0">taobao</KeyWord>
+
+<KeyWord Type="0">网络钟点工</KeyWord>
+
+<KeyWord Type="0">香港占中</KeyWord>
+
+<KeyWord Type="0">香港中环</KeyWord>
+
+<KeyWord Type="0">香港民主</KeyWord>
+
+<KeyWord Type="0">香港大学生</KeyWord>
+
+<KeyWord Type="0">占中</KeyWord>
+
+<KeyWord Type="0">民主</KeyWord>
+
+<KeyWord Type="0">香港</KeyWord>
+
+<KeyWord Type="0">大学生</KeyWord>
+
+<KeyWord Type="0">3８1455972</KeyWord>
+
+<KeyWord Type="0">381455972</KeyWord>
+
+<KeyWord Type="0">正规网络</KeyWord>
+
+<KeyWord Type="0">任务刷单</KeyWord>
+
+<KeyWord Type="0">代练</KeyWord>
+
+<KeyWord Type="0">工资日结</KeyWord>
+
+<KeyWord Type="0">临时人员</KeyWord>
+
+<KeyWord Type="0">请加Q</KeyWord>
+
+<KeyWord Type="0">扣B</KeyWord>
+
+<KeyWord Type="0">抠B</KeyWord>
+
+<KeyWord Type="0">裸聊</KeyWord>
+
+<KeyWord Type="0">果聊</KeyWord>
+
+<KeyWord Type="0">呻吟</KeyWord>
+
+<KeyWord Type="0">自慰</KeyWord>
+
+<KeyWord Type="0">艳舞</KeyWord>
+
+<KeyWord Type="0">抠逼</KeyWord>
+
+<KeyWord Type="0">扣逼</KeyWord>
+
+<KeyWord Type="0">逼毛</KeyWord>
+
+<KeyWord Type="0">B毛</KeyWord>
+
+<KeyWord Type="0">制服丝袜</KeyWord>
+
+<KeyWord Type="0">护士空姐</KeyWord>
+
+<KeyWord Type="0">付款</KeyWord>
+
+<KeyWord Type="0">dz.163.com</KeyWord>
+
+<KeyWord Type="0">暴雪</KeyWord>
+
+<KeyWord Type="0">爆雪</KeyWord>
+
+<KeyWord Type="0">爆血</KeyWord>
+
+<KeyWord Type="0">暴血</KeyWord>
+
+<KeyWord Type="0">网易</KeyWord>
+
+<KeyWord Type="0">dz</KeyWord>
+
+<KeyWord Type="0">网yi</KeyWord>
+
+<KeyWord Type="0">魔兽官方平台</KeyWord>
+
+<KeyWord Type="0">魔兽争霸官方对战平台</KeyWord>
+
+<KeyWord Type="0">官方对战平台</KeyWord>
+
+<KeyWord Type="0">官方平台</KeyWord>
+
+<KeyWord Type="0">公测</KeyWord>
+
+<KeyWord Type="0">com</KeyWord>
+
+<KeyWord Type="0">大奶</KeyWord>
+
+<KeyWord Type="0">少妇</KeyWord>
+
+<KeyWord Type="0">真人</KeyWord>
+
+<KeyWord Type="0">视频</KeyWord>
+
+<KeyWord Type="0">付费</KeyWord>
+
+<KeyWord Type="0">Q</KeyWord>
+
+<KeyWord Type="0">q</KeyWord>
+
+<KeyWord Type="0">qq</KeyWord>
+
+<KeyWord Type="0">QQ</KeyWord>
+
+<KeyWord Type="0">扣</KeyWord>
+
+<KeyWord Type="0">扣扣</KeyWord>
+
+<KeyWord Type="0">口口</KeyWord>
+
+<KeyWord Type="0">百度</KeyWord>
+
+<KeyWord Type="0">搜索</KeyWord>
+
+<KeyWord Type="0">微信</KeyWord>
+
+<KeyWord Type="0">网盘</KeyWord>
+
+<KeyWord Type="0">支付</KeyWord>
+
+<KeyWord Type="0">AV</KeyWord>
+
+<KeyWord Type="0">av</KeyWord>
+
+<KeyWord Type="0">Av</KeyWord>
+
+<KeyWord Type="0">aV</KeyWord>
+
+<KeyWord Type="0">一对一</KeyWord>
+
+<KeyWord Type="0">1对1</KeyWord>
+
+<KeyWord Type="0">出售</KeyWord>
+
+<KeyWord Type="0">陪练</KeyWord>
+
+<KeyWord Type="0">接单</KeyWord>
+
+<KeyWord Type="0">代练</KeyWord>
+
+<KeyWord Type="0">打炮</KeyWord>
+
+<KeyWord Type="0">扣B</KeyWord>
+
+<KeyWord Type="0">抠逼</KeyWord>
+
+<KeyWord Type="0">抠B</KeyWord>
+
+<KeyWord Type="0">扣B</KeyWord>
+
+<KeyWord Type="0">包射</KeyWord>
+
+<KeyWord Type="0">包爽</KeyWord>
+
+<KeyWord Type="0">福袋</KeyWord>
+
+<KeyWord Type="0">云盘</KeyWord>
+
+<KeyWord Type="0">有偿</KeyWord>
+
+<KeyWord Type="0">自扣</KeyWord>
+
+<KeyWord Type="0">喷水</KeyWord>
+
+<KeyWord Type="0">爱爱</KeyWord>
+
+<KeyWord Type="0">高品质</KeyWord>
+
+<KeyWord Type="0">试用</KeyWord>
+
+<KeyWord Type="0">粿聊</KeyWord>
+
+<KeyWord Type="0">u971</KeyWord>
+
+<KeyWord Type="0">971</KeyWord>
+
+<KeyWord Type="0">小姐</KeyWord>
+
+<KeyWord Type="0">黑丝</KeyWord>
+
+<KeyWord Type="0">胸大</KeyWord>
+
+<KeyWord Type="0">大胸</KeyWord>
+
+<KeyWord Type="0">臀</KeyWord>
+
+<KeyWord Type="0">自拍</KeyWord>
+
+<KeyWord Type="0">幼女</KeyWord>
+
+<KeyWord Type="0">人兽</KeyWord>
+
+<KeyWord Type="0">处女</KeyWord>
+
+<KeyWord Type="0">高清</KeyWord>
+
+<KeyWord Type="0">黄片</KeyWord>
+
+<KeyWord Type="0">毛片</KeyWord>
+
+<KeyWord Type="0">大尺度</KeyWord>
+
+<KeyWord Type="0">吞精</KeyWord>
+
+<KeyWord Type="0">偷窥</KeyWord>
+
+<KeyWord Type="0">骚女</KeyWord>
+
+<KeyWord Type="0">sao女</KeyWord>
+
+<KeyWord Type="0">云资源</KeyWord>
+
+<KeyWord Type="0">人美翘水多</KeyWord>
+
+<KeyWord Type="0">翘水多</KeyWord>
+
+<KeyWord Type="0">C0M</KeyWord>
+
+<KeyWord Type="0">E奶</KeyWord>
+
+<KeyWord Type="0">U690</KeyWord>
+
+<KeyWord Type="0">骚妇</KeyWord>
+
+<KeyWord Type="0">D奶肉丝</KeyWord>
+
+<KeyWord Type="0">人骚多水</KeyWord>
+
+<KeyWord Type="0">任哥调教</KeyWord>
+
+<KeyWord Type="0">色色涩</KeyWord>
+
+<KeyWord Type="0">Wuer2550</KeyWord>
+
+<KeyWord Type="0">wuer2550</KeyWord>
+
+<KeyWord Type="0">聊骚</KeyWord>
+
+<KeyWord Type="0">大尺毒</KeyWord>
+
+<KeyWord Type="0">搔拍</KeyWord>
+
+<KeyWord Type="0">达奶</KeyWord>
+
+<KeyWord Type="0">自筘</KeyWord>
+
+<KeyWord Type="0">喷氺</KeyWord>
+
+<KeyWord Type="0">大迟度</KeyWord>
+
+<KeyWord Type="0">芸盘</KeyWord>
+
+<KeyWord Type="0">薇信</KeyWord>
+
+<KeyWord Type="0">Vxin</KeyWord>
+
+<KeyWord Type="0">摆渡云</KeyWord>
+
+<KeyWord Type="0">v信</KeyWord>
+
+<KeyWord Type="0">湿频</KeyWord>
+
+<KeyWord Type="0">D乃</KeyWord>
+
+<KeyWord Type="0">约啪</KeyWord>
+
+<KeyWord Type="0">自wei</KeyWord>
+
+<KeyWord Type="0">口b</KeyWord>
+
+<KeyWord Type="0">S频</KeyWord>
+
+<KeyWord Type="0">自牌</KeyWord>
+
+<KeyWord Type="0">偷拍</KeyWord>
+
+<KeyWord Type="0">a灬v</KeyWord>
+
+<KeyWord Type="0">小灬视灬频</KeyWord>
+
+<KeyWord Type="0">百du云</KeyWord>
+
+<KeyWord Type="0">在线观看</KeyWord>
+
+<KeyWord Type="0">岛国</KeyWord>
+
+<KeyWord Type="0">baidu云</KeyWord>
+
+<KeyWord Type="0">迷药</KeyWord>
+
+<KeyWord Type="0">春药 </KeyWord>
+
+<KeyWord Type="0">滑膛弹弓</KeyWord>
+
+<KeyWord Type="0">zi拍</KeyWord>
+
+<KeyWord Type="0">大齿读</KeyWord>
+
+<KeyWord Type="0">企鹅群</KeyWord>
+
+<KeyWord Type="0">威信</KeyWord>
+
+<KeyWord Type="0">09</KeyWord>
+
+<KeyWord Type="0">09对战平台</KeyWord>
+
+<KeyWord Type="0">09平台</KeyWord>
+
+<KeyWord Type="0">09电竞平台</KeyWord>
+
+<KeyWord Type="0">V新</KeyWord>
+
+<KeyWord Type="0">人兽</KeyWord>
+
+<KeyWord Type="0">泉图</KeyWord>
+
+<KeyWord Type="0">兽</KeyWord>
+
+<KeyWord Type="0">啪啪</KeyWord>
+
+<KeyWord Type="0">卫欣</KeyWord>
+
+<KeyWord Type="0">帼产</KeyWord>
+
+<KeyWord Type="0">啪pa</KeyWord>
+
+<KeyWord Type="0">维新</KeyWord>
+
+<KeyWord Type="0">VX</KeyWord>
+
+<KeyWord Type="0">微芯</KeyWord>
+
+<KeyWord Type="0">薇欣</KeyWord>
+
+<KeyWord Type="0">V心</KeyWord>
+
+<KeyWord Type="0">人寿</KeyWord>
+
+<KeyWord Type="0">A直播</KeyWord>
+
+<KeyWord Type="0">打炮</KeyWord>
+
+<KeyWord Type="0">强奸</KeyWord>
+
+<KeyWord Type="0">弓虽</KeyWord>
+
+<KeyWord Type="0">女干</KeyWord>
+
+<KeyWord Type="0">友女</KeyWord>
+
+<KeyWord Type="0">呦女</KeyWord>
+
+<KeyWord Type="0">国产</KeyWord>
+
+<KeyWord Type="0">帼产</KeyWord>
+
+<KeyWord Type="0">锅铲</KeyWord>
+
+<KeyWord Type="0">人受</KeyWord>
+
+<KeyWord Type="0">制服</KeyWord>
+
+<KeyWord Type="0">制FU</KeyWord>
+
+<KeyWord Type="0">自拍</KeyWord>
+
+<KeyWord Type="0">微心</KeyWord>
+
+<KeyWord Type="0">自排致服</KeyWord>
+
+<KeyWord Type="0">FU利</KeyWord>
+
+<KeyWord Type="0">威欣</KeyWord>
+
+<KeyWord Type="0">神器</KeyWord>
+
+<KeyWord Type="0">自排</KeyWord>
+
+<KeyWord Type="0">试看</KeyWord>
+
+<KeyWord Type="0">致服</KeyWord>
+
+<KeyWord Type="0">罗聊</KeyWord>
+
+<KeyWord Type="0">叫床</KeyWord>
+
+<KeyWord Type="0">真Ren</KeyWord>
+
+<KeyWord Type="0">啰聊</KeyWord>
+
+<KeyWord Type="0">往盘</KeyWord>
+
+<KeyWord Type="0">偸拍</KeyWord>
+
+<KeyWord Type="0">强干</KeyWord>
+
+<KeyWord Type="0">不封</KeyWord>
+
+<KeyWord Type="0">国铲</KeyWord>
+
+<KeyWord Type="0">细列</KeyWord>
+
+<KeyWord Type="0">VX</KeyWord>
+
+<KeyWord Type="0">TU</KeyWord>
+
+<KeyWord Type="0">Tu</KeyWord>
+
+<KeyWord Type="0">KTV</KeyWord>
+
+<KeyWord Type="0">A片</KeyWord>
+
+</content>
