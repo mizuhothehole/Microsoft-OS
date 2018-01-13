@@ -1,0 +1,29 @@
+Windows platform sdk ddk wdk
+
+DDK: drive developer kit
+WDK: windows driver kit
+
+1).95/98/ME下，驱动模型为：Vxd，相关资料可以看《编程高手箴言》的前几个章节，里面有很详细的介绍，虽然这个东西已经过时，但大概看看还是会增长见识的。
+
+　　2).2000/XP/2003下，Windows采用WDM驱动模型（Windows Driver Model），开发2000/XP/2003的驱动开发包为：DDK。
+
+　　3).Vista及以后版本，采用了WDF驱动模型（Windows Driver Foudation），对应的开发包：WDK。
+
+其实WDK可以看做是DDK的升级版本，现在一般的WDK是包含以前DDK相关的功能，现在XP下也可以用WDK开发驱动，WDK能编译出2000-2008的各种驱动。
+
+于是乎我就尝试了一下这个叫做WDK的东西.
+
+https://developer.microsoft.com/ja-jp/windows/hardware/windows-driver-kit
+我把WDK下载了下来，可是他说必须要提前安装VS。
+我看的是英文的页面，然而里面有提到这个叫做windows debug tool的东西，简写为Windbg。
+于是就有这么个玩意儿。
+
+https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg
+然后是这个页面：
+https://developer.microsoft.com/ja-jp/windows/downloads/windows-8-1-sdk
+
+这里有下载SDK的地方。
+至于什么是这个SDK？
+windows software development kit.
+也就是在Window下面进行开发的开发工具。
+
