@@ -2,3 +2,5 @@ Windows installing
 
 getmac
 apconfig /all : this command can get the physical address.
+
+windows 7 could not install sqlserver 2016, we can use the DB 180days for free.
